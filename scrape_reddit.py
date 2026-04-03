@@ -107,7 +107,7 @@ def main(argv: List[str]) -> int:
         print("Missing REDDIT_CLIENT_ID or REDDIT_CLIENT_SECRET in environment.", file=sys.stderr)
         return 2
 
-    user_agent = os.environ.get("REDDIT_USER_AGENT") or "script:claudecode-scraper:0.1 (by u/your_username)"
+    user_agent = os.environ.get("REDDIT_USER_AGENT") or "vibe_reddit/0.1 by ksellesk"
     reddit = praw.Reddit(
         client_id=client_id,
         client_secret=client_secret,
@@ -149,4 +149,3 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
-
