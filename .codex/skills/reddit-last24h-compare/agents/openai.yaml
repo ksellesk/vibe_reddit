@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reddit 24h 对照"
+  short_description: "比较两个 Reddit 24h JSONL 文件的话题与互提"
+  default_prompt: "使用 $reddit-last24h-compare 比较两个 Reddit 24h JSONL 文件，概括各自主话题、互相提及与值得注意的高热帖子。"
